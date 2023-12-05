@@ -43,7 +43,6 @@ jobs:
         with:
           path: |
             dist/
-            dist/index.html
 
   # Deployment job
   deploy:
