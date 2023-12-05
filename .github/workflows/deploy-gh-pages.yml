@@ -29,6 +29,8 @@ jobs:
           node-version: '20.x'
       - name: Install dependencies
         run: npm install
+      - name: Install Copyfiles
+        run: npm install copyfiles -g
       - name: Build
         run: npm run build
       - name: Upload artifact
