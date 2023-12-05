@@ -1,0 +1,89 @@
+<html>
+<head>
+  <script src="/src/js/app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,800;1,200;1,800;1,600&family=Sono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/app.css">
+  <title>BBAP</title>
+</head>
+<body>
+<div class="app dark">
+  <nav class="navigation">
+  </nav>
+  <main>
+    <h1>Alias</h1>
+    <p>
+      An alias is a name that refers to a previously defined type.
+      It can be used to make the code more readable and give values a specific meaning.
+    </p>
+    <p>
+      You can create an alias with the <code>alias</code> keyword.
+    <h3>Example</h3>
+    <code class="block">
+      alias MyAlias: int;
+    </code>
+    </p>
+    <p>
+      An alias is in any way compatible with the type it refers to, but not to other aliases of the same type.
+    <h3>Example</h3>
+    <code class="block">
+      alias MyAlias: int;
+      alias MyAlias2: int;
+
+      let value: MyAlias = 123;
+      let value2: MyAlias2 = 123;
+
+      value = value2; // Error: MyAlias is not castable to MyAlias2
+    </code>
+    </p>
+
+    <h2>Public Aliases</h2>
+    <p>
+      Normally an alias exists only in the BBAP file. When it gets compiled to ABAP, the alias is replaced with the
+      underlying type.
+      You can make an alias public with the <code>public</code> keyword. This will make the alias available in the ABAP
+      code.
+
+    <p>
+    <h3>Example</h3>
+    <code class="block">
+      public alias MyAlias: int;
+    </code>
+    <p>
+      The alias is now available in the ABAP code. The usage of public aliases is rarely needed, except for code that
+      gets imported from SAP. Like a table.
+    </p>
+    <code class="block">
+      public alias Vbak: Table&lt;Vbak_Type&gt;;
+    </code>
+
+    <h2>Methods</h2>
+    <p>
+      You can create methods only for the alias type, only the alias type (or other aliases for this alias) can use the
+      methods.
+
+    <h3>Example</h3>
+    <code class="block">
+      alias MyAlias: int;
+
+      extend MyAlias {
+        func timesTwo(): MyAlias {
+          return this * 2;
+        }
+      }
+
+      let value: MyAlias = 123;
+      let newValue = myAlias.myMethod();
+    </code>
+
+    More information at <a href="/keywords/extend.html">Extend</a>.
+    </p>
+  </main>
+</div>
+</body>
+</html>

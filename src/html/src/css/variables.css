@@ -1,0 +1,28 @@
+.dark{
+  --color-text: #eaeaea;
+
+  --color-background: #222;
+  --color-background-secondary: #2F2F2F;
+  --color-background-third: #505050;
+
+  --color-border: #6c6c6c;
+
+  --color-light-blue: #90dbf4;
+  --color-blue: #427ad5;
+  --color-dark-blue: #224c8f;
+  --color-red: #ff928b;
+  --color-green: #cdeac0;
+  --color-purple: #cfbaf0;
+  --color-yellow: #b9b456;
+}
+
+
+:root{
+  --weight-thin: 200;
+  --weight-normal: 400;
+  --weight-bold: 800;
+
+  --radius-s: 3px;
+  --radius-m: 7px;
+  --radius-l: 11px;
+}

@@ -1,0 +1,39 @@
+<html>
+<head>
+  <script src="/src/js/app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,800;1,200;1,800;1,600&family=Sono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/app.css">
+  <title>BBAP</title>
+</head>
+<body>
+<div class="app dark">
+  <nav class="navigation">
+  </nav>
+  <main>
+    <h1>abap-dependencies</h1>
+
+    <p>
+      The <code>abap-dependencies</code> value is an array of paths to files that include the default ABAP/SAP values,
+      like tables or types. <br>
+      For example if you want to use the table 'VBAK' you have to add the path to the file that includes the table. That
+      way, you can easily use the table in your code.
+    </p>
+
+    <h2>Example</h2>
+    <code class="block">
+      {
+        "abap-dependencies": [
+          "abap/vbak.abap"
+        ]
+      }
+    </code>
+  </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<html>
+<head>
+  <script src="/src/js/app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,800;1,200;1,800;1,600&family=Sono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/app.css">
+  <title>BBAP</title>
+</head>
+<body>
+<div class="app dark">
+  <nav class="navigation">
+  </nav>
+  <main>
+    <h1>Extend</h1>
+    <p>
+      Methods are functions that can be called on values of the type they are defined for.
+      You can extend types with the <code>extend</code> keyword. This allows you to add methods to types. <br />
+      After the <code>extend</code> keyword you have to specify the type you want to extend. In the block after that you
+      can add methods to the type. <br />
+      Methods are defined like functions inside a <code>extend</code> block, the only
+      difference is that you can use the <code>this</code> keyword inside a method.
+    <h3>Example</h3>
+    <code class="block">
+      extend int {
+        func timesTwo(): int {
+          return this * 2;
+        }
+      }
+
+      let value: int = 4;
+      let newNumber = value.timesTwo(); // 8
+    </code>
+    </p>
+
+    <h2>Static Methods</h2>
+    <p>
+      Static methods are methods that can be called on the type itself.
+      Static methods are defined like normal methods, but with the <code>static</code>
+      keyword in front of the <code>func</code>-keyword.
+    </p>
+
+    <h3>Example</h3>
+    <code class="block">
+      extend int {
+        static func timesTwo(value: int): int {
+          return value * 2;
+        }
+      }
+
+      let value: int = 4;
+      let newNumber = int::timesTwo(value); // 8
+    </code>
+
+    <h2>this keyword</h2>
+    <p>
+      Inside a method you can access the value the method was called on with the <code>this</code> keyword. More
+      information about the <code>this</code> keyword can be found <a href="/keywords/this.html">here</a>.
+    </p>
+  </main>
+</div>
+</body>
+</html>

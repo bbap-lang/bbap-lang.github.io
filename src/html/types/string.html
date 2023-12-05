@@ -1,0 +1,68 @@
+<html>
+<head>
+  <script src="/src/js/app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&family=Sono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/app.css">
+  <title>BBAP</title>
+</head>
+<body>
+<div class="app dark">
+  <nav class="navigation">
+  </nav>
+  <main>
+    <h1>Strings</h1>
+    <p>
+      A string is a text (collection if character), other than a char array (e.g. <code>char[10]</code>) is the size of
+      a string dynamic.
+    </p>
+    <p>
+      You can define a string either in double quotation marks (<code>"This is a string"</code>) or in single quotation marks (<code>'This is also a string'</code>).<br />
+      More about that at <a href="../values/string_literal.html">string literals</a>.
+    </p>
+
+    <h2>Methods</h2>
+    <h3>ToCharArray</h3>
+    <p>
+      This method creates a <code>char[]</code> from the string.
+    </p>
+    <h4>Examples</h4>
+    <code class="block">
+      let str: String = "Hello World!";
+
+      let charArray: char[12] = str.toCharArray;
+    </code>
+
+    <div class="note">
+      While compiling, this method is just removed, meaning that the ABAP code look something like:
+      <code class="block">
+        charArray = str.
+      </code>
+      <br/>
+      That means it is never checked, that the string fits into the char array.
+    </div>
+
+    <h2>Range Operations</h2>
+    <p>
+      With range operations, you can get a string slice or single character out of a string.
+    </p>
+    <p>
+      You give it the start and end index.
+    </p>
+
+    <code class="block">
+      let str = "Hello World!";
+
+      let world = str[6..11];
+      let world2 = str[6..^2];
+      let w = str[6];
+    </code>
+  </main>
+</div>
+</body>
+</html>

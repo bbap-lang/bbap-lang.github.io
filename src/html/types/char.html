@@ -1,0 +1,45 @@
+<html>
+<head>
+  <script src="/src/js/app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,800;1,200;1,800;1,600&family=Sono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/app.css">
+  <title>BBAP</title>
+</head>
+<body>
+<div class="app dark">
+  <nav class="navigation">
+  </nav>
+  <main>
+    <h1>Char</h1>
+    <p>
+      The <code>char</code> type is used to store either a single character or a string of characters.
+      The difference between the <code>char</code> and <code>string</code> type is that the <code>char</code> has a
+      fixed size. In a table only chars can be stored, not a dynamic string. The size of a char is fixed to the
+      variable, meaning that you can't change the size of a char after it has been declared.
+    </p>
+    <p>
+      A char is always implicit castable to a string, but a string is not implicit castable to a char. For that you have
+      to use the <code>ToCharArray</code> function. <br>
+      More information about string can be found <a href="/types/string.html">here</a>.
+    </p>
+
+    <h2>Example</h2>
+    <code class="block">
+      let str: char[14] = 'Hello World';
+    </code>
+    <p>
+      In this example the variable <code>str</code> is declared as a char with the size of 14. The size of the char
+      is set to 14. <br>
+      The string literal 'Hello World' is 11 characters long. The compiler will automatically fill the remaining 3
+      characters with spaces.
+    </p>
+  </main>
+</div>
+</body>
+</html>

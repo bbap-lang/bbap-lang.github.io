@@ -1,0 +1,184 @@
+@import "variables.css";
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+h2{
+  margin-top: 50px;
+}
+a {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  line-height: 1.3rem;
+}
+
+table {
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  border-collapse: collapse;
+
+  & th{
+    background-color: var(--color-background-secondary);
+  }
+
+  & th, & td{
+    text-align: left;
+    border-top: 1px solid var(--color-border);
+    margin: 0;
+    padding: 5px 25px 5px 10px;
+  }
+}
+
+code {
+  font-family: 'Sono', monospace;
+  display: inline-block;
+  font-size: 0.9rem;
+  background-color: var(--color-background-secondary);
+  border-radius: var(--radius-s);
+}
+
+code:not(.block) {
+  line-height: 1.3rem;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+code.block {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 3px;
+  display: block;
+  width: min(calc(100% - 36px), 800px);
+  position: relative;
+
+  border-left: 30px solid var(--color-background-third);
+  counter-reset: section;
+  font-size: 1rem;
+  font-stretch: extra-expanded;
+}
+
+code.block .line {
+  display: block;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  white-space: pre;
+  font-stretch: extra-expanded;
+}
+
+code.block > .line::before {
+  counter-increment: section;
+  content: counter(section);
+  left: -25px;
+  position: absolute;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+.navigation {
+  border: 1px solid var(--color-border);
+  float: left;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 20px 0;
+  margin: 20px;
+  min-width: 200px;
+  background-color: var(--color-background-secondary);
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+.nav-container {
+  padding-left: 28px;
+  height: 1.5rem;
+  overflow-y: hidden;
+
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.nav-container.has-children{
+   padding-left: 10px;
+ }
+
+.nav-container > span, .nav-container > a {
+  line-height: 1.5rem;
+}
+
+.nav-container > span {
+  /*font-weight: var(--weight-bold);*/
+}
+
+.nav-container > a {
+  color: var(--color-text);
+}
+
+.nav-container.open {
+  height: auto;
+  overflow-y: visible;
+}
+
+.nav-container .drop-down::after {
+  content: '\25B6';
+  cursor: pointer;
+  padding-bottom: 0.2rem;
+  font-size: 0.75rem;
+  padding-right: 8px;
+}
+
+.nav-container.open > .drop-down::after {
+  content: '\25BC';
+  font-size: 0.8rem;
+  margin-left: -3px;
+ }
+
+
+main {
+  padding: 20px;
+  overflow-y: auto;
+  width: 100%;
+
+  & p{
+    width: min(800px, 100%);
+  }
+}
+
+.note {
+  background-color: var(--color-dark-blue);
+  width: min(calc(100% - 40px), 796px);
+  padding: 40px 20px 20px;
+  border-radius: var(--radius-l);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.note::before {
+  content: 'Note';
+  display: block;
+  position: absolute;
+  top: 10px;
+  font-weight: var(--weight-bold);
+}

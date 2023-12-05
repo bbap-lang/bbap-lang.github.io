@@ -1,0 +1,55 @@
+<html>
+<head>
+  <script src="/src/js/app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&family=Sono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/app.css">
+  <title>BBAP</title>
+</head>
+<body>
+<div class="app dark">
+  <nav class="navigation">
+  </nav>
+  <main>
+    <h1>String Literals</h1>
+
+    <h2> Quotation Marks </h2>
+    <p>
+      You can define a string either in double quotation marks (<code>"This is a string"</code>) or in single quotation
+      marks (<code>'This is also a string'</code>).<br />
+      They both behave the same.<br />
+      The only difference is, that you can use the other form inside a string literal without escaping it.
+      <code class="block">
+        let exampleString  = "Hello 'World' string";     // Hello 'World' string
+        let exampleString2 = 'Hello "World" string';     // Hello "World" string
+      </code>
+    </p>
+
+    <h2>Escaping</h2>
+    <p>
+      There are some characters that you can't write inside a string literals, this characters can be escaped with a
+      backslash (<code>\</code>).
+    </p>
+    <h3>Escape Options</h3>
+    <ul>
+      <li><code>\n</code> - Newline</li>
+      <li><code>\t</code> - Tab</li>
+      <li><code>\'</code> - Single Quote</li>
+      <li><code>\"</code> - Double Quote</li>
+      <li><code>\\</code> - Backslash</li>
+    </ul>
+    <h3>Examples</h3>
+    <code class="block">
+      let exampleString = "Hello\"World!"; // Hello"World!
+      let exampleString2 = "Hello\'World!"; // Hello'World!
+      let exampleString3 = "Hello\\World!"; // Hello\World!
+    </code>
+  </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "name": "typescript-boilerplate-2021",
+  "version": "0.4.2",
+  "description": "Boilerplate for TypeScript projects (Node.js and browser modules)",
+  "author": "Chris Hager <chris@linuxuser.at>",
+  "repository": "https://github.com/metachris/typescript-boilerplate",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "boilerplate",
+    "esbuild"
+  ],
+  "main": "./dist/tsc/main.js",
+  "types": "./dist/tsc/main.d.ts",
+  "browser": "./dist/esbuild/browser.js",
+  "bin": {
+    "my-cli-tool": "./dist/esbuild/cli.js"
+  },
+  "scripts": {
+    "build": "esbuild src/ts/browser.ts --bundle --minify --target=chrome58,firefox57,safari11,edge16 --outfile=dist/src/js/app.js & copyfiles --up 4 src/html/src/css/**/*.css dist/src/css & copyfiles --up 2 src/html/**/*.html dist",
+    "dev": "esbuild src/ts/browser.ts --bundle --sourcemap --outfile=src/html/src/js/app.js",
+    "watch": "esbuild src/ts/browser.ts --bundle --sourcemap --watch --outfile=src/html/src/js/app.js",
+    "serve": "esbuild --serve=8000 --servedir=src/html",
+    "start": "npm-run-all --parallel watch serve"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.26",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "esbuild": "^0.14.38",
+    "eslint": "^8.14.0",
+    "jest": "27.0.0",
+    "npm-run-all": "^4.1.5",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "typedoc": "^0.22.15",
+    "typescript": "^4.6.3"
+  }
+}
