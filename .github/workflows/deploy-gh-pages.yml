@@ -11,7 +11,7 @@ on:
     #tags:
     #  - v*
     branches:
-      - master
+      - main
 
 jobs:
   # Build job
