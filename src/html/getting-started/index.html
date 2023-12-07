@@ -9,6 +9,7 @@
     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,800;1,200;1,800;1,600&family=Sono&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="/src/css/app.css">
+  <link rel="shortcut icon" href="/src/icons/favivon.ico" type="image/x-icon">
   <title>BBAP</title>
 </head>
 <body>
@@ -19,10 +20,31 @@
     <h1>Getting Started</h1>
     <p>
       First of all, so that you don't get confused, BBAP is not case-sensitive. This means that it doesn't matter if you
-      write you code in uppercase or lowercase. So the variables <code>str</code> and <code>STR</code> are the same. <br>
+      write your code in uppercase or lowercase. So the variables <code>str</code> and <code>STR</code> are the same.
+      <br>
     </p>
     <p>
-
+      The first thing to do is to download the BBAP compiler. You can find the latest release on the <a
+      href="https://github.com/bbap-lang/Compiler/releases">GitHub</a> page.
+    </p>
+    <p>
+      After installing, you can start writing your first BBAP program.
+    </p>
+    <code class="block">
+      println("Hello World!");
+    </code>
+    <p>
+      To compile the program, you have to run the following command in the terminal:
+      <code class="block">
+        bbap [input file name] [output file name]
+      </code>
+      For example:
+      <code class="block">
+        bbap hello.bbap hello.abap
+      </code>
+    </p>
+    <p>
+      The code in the <code>hello.abap</code> file can now be copied into the SAP system and executed.
     </p>
   </main>
 </div>
