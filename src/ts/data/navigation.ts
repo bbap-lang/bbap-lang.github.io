@@ -24,6 +24,10 @@ export const fullNavigation: NavigationElement = {
         {
           name: "Func",
           href: "/keywords/func.html"
+        },
+        {
+          name: "Enum",
+          href: "/keywords/enum.html"
         }
       ]
     },

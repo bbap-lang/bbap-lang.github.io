@@ -1,0 +1,102 @@
+<html>
+<head>
+  <script src="/src/js/app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,800;1,200;1,800;1,600&family=Sono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/app.css">
+  <title>BBAP</title>
+</head>
+<body>
+<div class="app dark">
+  <nav class="navigation">
+  </nav>
+  <main>
+    <h1>Enum</h1>
+    <p>
+      An enum is a type that contains a set of named values. For example, the days of the week can be represented by an
+      enum.
+    </p>
+    <p>
+      Enums are declared with the <code>enum</code> keyword. After the keyword you have to specify the name of the enum.
+      The values of the enum are defined in a block. The values are seperated by a comma.
+    </p>
+    <h4>Examples</h4>
+    <code class="block">
+      enum Days {
+        Monday,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday,
+        Sunday
+      }
+    </code>
+    <h2>Usage</h2>
+    <p>
+      An enum value is used like a static variable.
+    </p>
+    <h4>Example</h4>
+    <code class="block">
+      let day = Days::Monday;
+    </code>
+
+    <h3>Comparing</h3>
+    <p>
+      Enums can be used like the underlying type.
+      That means you can compare them with the <code>==</code> operator, but you can also check if the value is smaller or greater.
+    </p>
+    <h4>Example</h4>
+    <code class="block">
+      let day = Days::Monday;
+      if (day == Days::Monday) {
+        println("It's Monday!");
+      }
+    </code>
+
+    <h2>Custom Values</h2>
+    <p>
+      By default, the values are of the type <code>int</code>, they start at <code>0</code> and increment by
+      <code>1</code> for each value.
+    </p>
+    <p>
+      You can define your own values. They are specified with a <code>=</code> after the name of the value.
+    </p>
+    <h4>Example</h4>
+    <code class="block">
+      enum Days {
+        Monday = 1,
+        Tuesday = 2,
+        Wednesday = 3,
+        Thursday = 4,
+        Friday = 5,
+        Saturday = 6,
+        Sunday = 7
+      }
+    </code>
+    <h2>Using a different type</h2>
+    <p>
+      Normally, the values of an enum are of the type <code>int</code>.
+      You can change the type of the values by specifying it after the name of the enum.
+    </p>
+    <h4>>Example</h4>>
+    <code class="block">
+      enum Days: string {
+        Monday = "Mon",
+        Tuesday = "Tues",
+        Wednesday = "Wed",
+        Thursday = "Thurs",
+        Friday = "Fri",
+        Saturday = "Sat",
+        Sunday = "Sun"
+      }
+    </code>
+  </main>
+</div>
+</body>
+</html>
