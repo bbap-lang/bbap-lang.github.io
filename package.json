@@ -17,7 +17,7 @@
     "my-cli-tool": "./dist/esbuild/cli.js"
   },
   "scripts": {
-    "build": "esbuild src/ts/browser.ts --bundle --minify --target=chrome58,firefox57,safari11,edge16 --outfile=dist/src/js/app.js & copyfiles --up 4 src/html/src/css/**/*.css dist/src/css & copyfiles --up 2 src/html/**/*.html dist & copyfiles --up 2 src/html/index.html dist & src/html/src/icons/**/*.ico dist/src/icons",
+    "build": "esbuild src/ts/browser.ts --bundle --minify --target=chrome58,firefox57,safari11,edge16 --outfile=dist/src/js/app.js & copyfiles --up 4 src/html/src/css/**/*.css dist/src/css & copyfiles --up 2 src/html/**/*.html dist & copyfiles --up 2 src/html/index.html dist & copyfiles --up 2 src/html/**/*.ico dist",
     "dev": "esbuild src/ts/browser.ts --bundle --sourcemap --outfile=src/html/src/js/app.js",
     "watch": "esbuild src/ts/browser.ts --bundle --sourcemap --watch --outfile=src/html/src/js/app.js",
     "serve": "esbuild --serve=8000 --servedir=src/html",
