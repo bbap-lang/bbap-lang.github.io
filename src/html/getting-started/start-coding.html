@@ -1,0 +1,301 @@
+<html>
+<head>
+  <script src="/src/js/app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,800;1,200;1,800;1,600&family=Sono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/app.css">
+  <link rel="shortcut icon" href="/src/icons/favivon.ico" type="image/x-icon">
+  <title>BBAP</title>
+</head>
+<body>
+<div class="app dark">
+  <nav class="navigation">
+  </nav>
+  <main>
+    <h1>Start Coding</h1>
+    <h2>Variables</h2>
+    <p>
+      Variables are used to store data. Variables can be declared with the <code>let</code> keyword.
+    </p>
+    <code class="block">
+      let variable = 12;
+    </code>
+    <p>
+      In this example, the variable <code>variable</code> is declared with the value <code>12</code>.
+    </p>
+    <p>
+      BBAP is a statically typed language, which means that the type of the variable is determined at compile time.
+      In most cases, the type of the variable is determined by the value of the variable. In the example above, the type
+      of the variable is <code>int</code>.
+    </p>
+    <p>
+      The type of the variable can also be specified manually. This is done by adding a colon and the type after the variable name.
+    </p>
+    <code class="block">
+      let variable: int = 12;
+    </code>
+    <p>
+      In this example, the type of the variable is specified manually. This is not necessary, but can be useful in some cases.
+    </p>
+    <h2>Types</h2>
+    <p>
+      There are multiple basic types. The basic types are:
+    </p>
+    <ul>
+      <li><code>int</code> - small numbers without decimals</li>
+      <li><code>long</code> - big numbers without decimals</li>
+      <li><code>float</code> - numbers with decimals and less accuracy</li>
+      <li><code>double</code> - numbers with decimals and more accuracy</li>
+      <li><code>string</code> - text</li>
+      <li><code>bool</code> - boolean variables (only <code>true</code> or <code>false</code>)</li>
+    </ul>
+    <p>
+      More information about the types can be found <a href="/types/numbers.html">here</a> for numbers and <a href="/types/string.html">here</a> for text.
+    </p>
+    <code class="block">
+      let intVariable: int = 12;
+      let longVariable: long = 1234567890123456789;
+      let floatVariable: float = 12.34;
+      let doubleVariable: double = 19.123456786789;
+      let stringVariable = "Hello World!";
+      let boolVariable = true;
+    </code>
+    <h2>Calculations</h2>
+    <p>
+      Calculations can be done with the basic operators. The basic operators are:
+    </p>
+    <ul>
+      <li><code>+</code> - Addition</li>
+      <li><code>-</code> - Subtraction</li>
+      <li><code>*</code> - Multiplication</li>
+      <li><code>/</code> - Division</li>
+      <li><code>%</code> - Modulo</li>
+    </ul>
+    <code class="block">
+      let i = 1 + 2; // 3
+      let j = 3 - 2; // 1
+      let k = 2 * 3; // 6
+      let l = 6 / 2; // 3
+      let m = 5 % 2; // 1
+    </code>
+    <p>
+      The <code>%</code> operator returns the remainder of a division. For example, <code>5 % 2</code> is 1, because 2 goes into 5 two times, with a remainder of 1.
+    </p>
+    <p>
+      The order of operations can be changed with parentheses.
+    </p>
+    <p>
+      Additionally, there are the increment and decrement operators. The increment operator is <code>++</code> and the decrement operator is <code>--</code>.
+    </p>
+    <code class="block">
+      let i = 0;
+      i++; // 1
+      i--; // 0
+    </code>
+    <h2>If</h2>
+    <p>
+      The <code>if</code> keyword is used to execute code only if a condition is true.
+    </p>
+    <code>
+      let i = 0;
+      if (i == 0) {
+        println("Hello World!");
+      }
+    </code>
+    <p>
+      In this example, the code inside the <code>if</code> block will only be executed if <code>i</code> is equal to 0.
+    </p>
+    <p>
+      The condition is specified inside the parentheses after the <code>if</code> keyword. The parentheses are optional, but recommended.
+    </p>
+    <h3>Comparison Operators</h3>
+    <p>
+      The condition can be any expression that returns a boolean value. For example, the condition can be a comparison, like in the example above.
+      The other comparison operators are:
+    </p>
+    <ul>
+      <li><code>==</code> - Equals</li>
+      <li><code>!=</code> - Not Equals</li>
+      <li><code>&lt;</code> - Smaller Than</li>
+      <li><code>&gt;</code> - Larger Than</li>
+      <li><code>&lt;=</code> - Smaller Than Or Equals</li>
+      <li><code>&gt;=</code> - Larger Than Or Equals</li>
+    </ul>
+    <h3>Logical Operators</h3>
+    <p>
+      Logical operators can be used to combine multiple conditions.
+    </p>
+    <code class="block">
+      let i = 0;
+      if (i > 5 && i < 12) {
+        println("Hello World!");
+      }
+    </code>
+    <p>
+      In this example, the code inside the <code>if</code> block will only be executed if <code>i</code> is larger than 5 and smaller than 12.
+    </p>
+    <p>
+      The logical operators are:
+    </p>
+    <ul>
+      <li><code>&&</code> - And</li>
+      <li><code>||</code> - Or</li>
+      <li><code>!</code> - Not</li>
+    </ul>
+    <p>
+      The <code>!</code> operator can be used to negate a condition. For example, <code>!(i == 0)</code> is true if <code>i</code> is not equal to 0.
+    </p>
+    <h2>Loops</h2>
+    <p>
+      Loops are used to execute code multiple times.
+    </p>
+    <h3>While</h3>
+    <p>
+      The <code>while</code> keyword is used to execute code while a condition is true.
+    </p>
+    <code class="block">
+      let i = 0;
+      while (i < 10) {
+        println(i);
+        i++;
+      }
+    </code>
+    <p>
+      In this example, the code inside the <code>while</code> block will be executed while <code>i</code> is smaller than 10.<br>
+    </p>
+    <h3>For Loops</h3>
+    <p>
+      For loops are used to execute code a specific number of times.
+    </p>
+    <code class="block">
+      for (let i = 0; i < 10; i++;) {
+        println(i);
+      }
+    </code>
+    <p>
+      In this example, the code inside the <code>for</code> block will be executed 10 times.
+      This means it is the same as the <code>while</code> loop above.
+    </p>
+    <p>
+      The <code>for</code> loop has three parts:
+    </p>
+    <ul>
+      <li>The first part is the initialization. This is where the variable is declared and initialized.</li>
+      <li>The second part is the condition. This is where the condition is specified. The code inside the loop will be executed while the condition is true.</li>
+      <li>The third part is executed at the end of every run. In most cases, that is either an increment or decrement.</li>
+    </ul>
+    <h2>Functions</h2>
+    <p>
+      Functions are used to execute code multiple times from different places.
+    </p>
+    <code class="block">
+      func example() {
+        println("Hello World!");
+      }
+
+      example(); // Hello World!
+    </code>
+    <p>
+      In this example, the function <code>example</code> is defined and then called.
+    </p>
+    <h3>Parameters</h3>
+    <p>
+      Functions can have parameters. Parameters are used to pass data to the function.
+    </p>
+    <code class="block">
+      func example(parameter: int) {
+        println(parameter);
+      }
+
+      example(12); // 12
+      example(1); // 1
+    </code>
+    <p>
+      In this example, the function <code>example</code> has one parameter. The parameter is called <code>parameter</code> and is of type <code>int</code>.
+    </p>
+    <h3>Return Values</h3>
+    <p>
+      Functions can return values. The return value is the value that the function returns.
+    </p>
+    <code class="block">
+      func example(parameter: int): int {
+        return parameter * 2;
+      }
+
+      let i = example(12); // 24
+      let j = example(1); // 2
+    </code>
+    <p>
+      In this example, the function <code>example</code> returns the parameter multiplied by 2.
+    </p>
+    <p>
+      A function call also return multiple values.
+    </p>
+    <code class="block">
+      func example(parameter: int): (int, int) {
+        let multiplied = parameter * 2;
+        return (parameter, multiplied);
+      }
+
+      let (i, j) = example(12); // i = 12, j = 24
+      let (k, l) = example(1); // k = 1, l = 2
+    </code>
+    <p>
+      In this example, the function <code>example</code> returns the parameter and the parameter multiplied by 2.
+    </p>
+    <h2>Comments</h2>
+    <p>
+      Comments are used to add notes to the code. Comments are ignored by the compiler. You maybe noticed that the comments in this tutorial previously.
+    </p>
+    <p>
+      There are two types of comments. Single line comments and multi line comments. Single line comments start with <code>//</code> and end at the end of the line.
+      Multi line comments start with <code>/*</code> and end with <code>*/</code>.
+    </p>
+
+    <code class="block">
+      // This is a single line comment
+
+      /*
+        This is a multi line comment.
+        It can span multiple lines.
+      */
+    </code>
+    <h2>Structs</h2>
+    <p>
+      Structs are a way to store multiple values in one variable. For example, if you want to store a person's name and
+      age, you can do it like this:
+    </p>
+    <code class="block">
+      struct Person {
+      name: string;
+      age: int;
+      }
+    </code>
+    <p>
+      Now you can create a variable of the type <code>Person</code> and store the name and age in it.
+    </p>
+    <code class="block">
+      let person = new Person{
+      name: "John",
+      age: 12
+      };
+    </code>
+    <p>
+      You can access the values of the struct with a dot:
+    </p>
+    <code class="block">
+      println(person.name); // John
+      println(person.age); // 12
+    </code>
+    <p>
+      To learn more, go to <a href="/keywords/struct.html">structs</a>.
+    </p>
+  </main>
+</div>
+</body>
+</html>

@@ -84,7 +84,13 @@
     children: [
       {
         name: "Getting Started",
-        href: "/getting-started/"
+        href: "/getting-started/",
+        children: [
+          {
+            name: "Start Coding",
+            href: "/getting-started/start-coding.html"
+          }
+        ]
       },
       {
         name: "Keywords",

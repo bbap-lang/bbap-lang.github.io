@@ -5,6 +5,12 @@ export const fullNavigation: NavigationElement = {
     {
       name: "Getting Started",
       href: "/getting-started/",
+      children: [
+        {
+          name: "Start Coding",
+          href: "/getting-started/start-coding.html"
+        }
+      ]
     },
     {
       name: "Keywords",
