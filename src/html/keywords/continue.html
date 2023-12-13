@@ -17,8 +17,27 @@
   <nav class="navigation">
   </nav>
   <main>
-    <h1>HEADLINE</h1>
+    <h1>Continue</h1>
+    <p>
+      The <code>continue</code> keyword is used to skip the current iteration of a loop. The keyword can only be used
+      inside a loop.
+    </p>
 
+    <h3>Example</h3>
+    <code class="block">
+      let i = 0;
+      while (i < 20) {
+      if(i == 10) {
+      continue;
+      }
+
+      i++;
+      }
+    </code>
+    <p>
+      In this example, the loop will run forever, because the <code>continue</code> keyword skips the incrementation of
+      the <code>i</code> variable when <code>i</code> is equal to 10.
+    </p>
   </main>
 </div>
 </body>

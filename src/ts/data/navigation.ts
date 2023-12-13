@@ -28,6 +28,14 @@ export const fullNavigation: NavigationElement = {
         {
           name: "Enum",
           href: "/keywords/enum.html"
+        },
+        {
+          name: "Break",
+          href: "/keywords/break.html"
+        },
+        {
+          name: "Continue",
+          href: "/keywords/continue.html"
         }
       ]
     },
