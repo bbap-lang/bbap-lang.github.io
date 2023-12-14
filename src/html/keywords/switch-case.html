@@ -1,0 +1,62 @@
+<html>
+<head>
+  <script src="/src/js/app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,800;1,200;1,800;1,600&family=Sono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/app.css">
+  <link rel="shortcut icon" href="/src/icons/favivon.ico" type="image/x-icon">
+  <title>BBAP</title>
+</head>
+<body>
+<div class="app dark">
+  <nav class="navigation">
+  </nav>
+  <main>
+    <h1>Switch/Case</h1>
+    <p>
+      The <code>switch</code> keyword is used to compare a value to multiple values. It can replace multiple <code>if</code>-statements.
+    </p>
+    <code class="block">
+      switch (value) {
+        case 1 {
+          printline("One");
+        }
+        case 2{
+          printline("Two");
+        }
+        default {
+          printline("Unknown");
+        }
+      }
+    </code>
+    <p>
+      In this example, the <code>value</code> variable is compared to the values <code>1</code> and <code>2</code>. If the value is <code>1</code>,
+      the <code>One</code> string will be printed. If the value is <code>2</code>, the <code>Two</code> string will be printed.
+      If the value is neither <code>1</code> nor <code>2</code>, the <code>Unknown</code> string will be printed.
+    </p>
+    <p>
+      The <code>default</code> keyword is optional. If the value is not equal to any of the values in the <code>case</code> statements,
+      the code in the <code>default</code> statement will be executed.
+    </p>
+    <p>
+      The values in the <code>case</code> statements can be any value, not just numbers. For example, you can compare a string to multiple strings.
+    </p>
+    <code class="block">
+      switch(value){
+        case "One" {
+          printline(1);
+        }
+        case "Two" {
+          printline(2);
+        }
+      }
+    </code>
+  </main>
+</div>
+</body>
+</html>
