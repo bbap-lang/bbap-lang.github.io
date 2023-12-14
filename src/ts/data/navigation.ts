@@ -42,6 +42,10 @@ export const fullNavigation: NavigationElement = {
         {
           name: "Continue",
           href: "/keywords/continue.html"
+        },
+        {
+          name: "Switch / Case",
+          href: "/keywords/switch-case.html"
         }
       ]
     },
