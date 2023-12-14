@@ -126,6 +126,10 @@
           {
             name: "Switch / Case",
             href: "/keywords/switch-case.html"
+          },
+          {
+            name: "Const",
+            href: "/keywords/const.html"
           }
         ]
       },
