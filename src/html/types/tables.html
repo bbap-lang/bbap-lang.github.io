@@ -1,0 +1,60 @@
+<html>
+<head>
+  <script src="/src/js/app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,800;1,200;1,800;1,600&family=Sono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/app.css">
+  <link rel="shortcut icon" href="/src/icons/favivon.ico" type="image/x-icon">
+  <title>BBAP</title>
+</head>
+<body>
+<div class="app dark">
+  <nav class="navigation">
+  </nav>
+  <main>
+    <h1>Tables</h1>
+    <p>
+      The <code>tables</code> keyword is used to declare a table. A table is a collection of values. <br>
+      The values of a table can be changed. The values of a table can be accessed with <a href="/sql">SQL</a>.
+    </p>
+    <code class="block">
+      let exampleTable: Table&lt;int&gt;;
+
+      exampleTable.append(1);
+      exampleTable.append(2);
+      exampleTable.append(3);
+
+      let ones: Table&lt;int&gt;;
+
+      ones = SELECT *
+        FROM exampleTable
+        WHERE exampleTable = 1;
+    </code>
+    <p>
+      The <code>Table</code> keyword is used to declare a table. The <code>Table</code> keyword takes one type as a
+      parameter. <br>
+      The type of the table is the type of the values in the table. <br>
+      The <code>append</code> method is used to add a value to the table. <br>
+    </p>
+
+    <h2>Examples</h2>
+    <h3>Append</h3>
+    <p>
+      The <code>append</code> method is used to add a value to the table, it takes one parameter.
+    </p>
+    <code class="block">
+      let exampleTable: Table&lt;int&gt;;
+
+      exampleTable.append(1);
+      exampleTable.append(2);
+      exampleTable.append(3);
+    </code>
+  </main>
+</div>
+</body>
+</html>

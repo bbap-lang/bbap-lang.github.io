@@ -103,6 +103,10 @@ export const fullNavigation: NavigationElement = {
         {
           name: "Char",
           href: "/types/char.html"
+        },
+        {
+          name: "Tables",
+          href: "/types/tables.html"
         }
       ]
     },
