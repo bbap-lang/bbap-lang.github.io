@@ -62,6 +62,35 @@
       Inside a method you can access the value the method was called on with the <code>this</code> keyword. More
       information about the <code>this</code> keyword can be found <a href="/keywords/this.html">here</a>.
     </p>
+
+
+    <h2>Read Only</h2>
+    <p>
+      You can make a method read only by adding the <code>readonly</code> keyword behind the <code>func</code>
+      keyword. This means that the method cannot change the value it was called on.
+    </p>
+    <code class="block">
+      extend int {
+        func readonly timesTwo(): int {
+          return this * 2;
+        }
+      }
+    </code>
+    <p>
+      The reason why you would want to make a method read only is that you can call it on a constant value.
+    </p>
+
+    <h3>Example</h3>
+    <code class="block">
+      extend int {
+        func readonly timesTwo(): int {
+          return this * 2;
+        }
+      }
+
+      const value = 4;
+      let newNumber = value.timesTwo(); // 8
+    </code>
   </main>
 </div>
 </body>
