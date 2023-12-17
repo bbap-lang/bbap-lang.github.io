@@ -126,8 +126,8 @@ export const fullNavigation: NavigationElement = {
           href: "/default-functions/print.html"
         },
         {
-          name: "Println",
-          href: "/default-functions/println.html"
+          name: "PrintLine",
+          href: "/default-functions/printLine.html"
         }
       ]
     }

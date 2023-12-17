@@ -206,8 +206,8 @@
             href: "/default-functions/print.html"
           },
           {
-            name: "Println",
-            href: "/default-functions/println.html"
+            name: "printLine",
+            href: "/default-functions/printLine.html"
           }
         ]
       }

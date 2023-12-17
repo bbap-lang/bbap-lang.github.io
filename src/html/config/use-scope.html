@@ -29,9 +29,9 @@
       let i = 0;
       if(i == 0){
         let i = 1;
-        println(i); // 1
+        printLine(i); // 1
       }
-      println(i); // 0
+      printLine(i); // 0
     </code>
     <p>
       The <code>use-scopes</code> value is <code>true</code> by default. This means that the compiler will add a new
@@ -42,9 +42,9 @@
       let i = 0;
       if(i == 0){
         let i = 1; // Error: let is here not allowed, because 'i' is already defined in the parent scope
-        println(i); // 1
+        printLine(i); // 1
       }
-      println(i); // 1
+      printLine(i); // 1
     </code>
 
     <h2>Allowed Values</h2>
