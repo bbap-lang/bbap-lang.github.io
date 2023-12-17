@@ -1,0 +1,50 @@
+<html>
+<head>
+  <script src="/src/js/app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,800;1,200;1,800;1,600&family=Sono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/app.css">
+  <link rel="shortcut icon" href="/src/icons/favivon.ico" type="image/x-icon">
+  <title>BBAP</title>
+</head>
+<body>
+<div class="app dark">
+  <nav class="navigation">
+  </nav>
+  <main>
+    <h1>Foreach</h1>
+    <p>
+      The <code>foreach</code> loop is used to iterate over a table.
+    </p>
+    <code class="block">
+      let exampleTable: Table&lt;int&gt;;
+      foreach (let exampleFieldSymbol on exampleTable) {
+        // Do something
+      }
+    </code>
+    <p>
+      The variable <code>exampleFieldSymbol</code> is a <a href="/types/field-symbol.html">field symbol</a> that
+      references a value in the table <code>exampleTable</code>.
+    </p>
+    <p>
+      With every iteration, the field symbol will reference the next value in the table.
+    </p>
+    <p>
+      The <code>let</code> keyword is used to declare a variable. The <code>let</code> is optional, you can also use a field symbol that is already declared.
+    </p>
+    <code class="block">
+      let exampleTable: Table&lt;int&gt;;
+      let exampleFieldSymbol: FieldSymbol&lt;int&gt;;
+      foreach (exampleFieldSymbol on exampleTable) {
+        // Do something
+      }
+    </code>
+  </main>
+</div>
+</body>
+</html>

@@ -130,6 +130,10 @@
           {
             name: "Const",
             href: "/keywords/const.html"
+          },
+          {
+            name: "Foreach",
+            href: "/keywords/foreach.html"
           }
         ]
       },
@@ -187,6 +191,10 @@
           {
             name: "Tables",
             href: "/types/tables.html"
+          },
+          {
+            name: "Field Symbols",
+            href: "/types/field-symbol.html"
           }
         ]
       },

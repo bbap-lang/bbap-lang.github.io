@@ -50,6 +50,10 @@ export const fullNavigation: NavigationElement = {
         {
           name: "Const",
           href: "/keywords/const.html"
+        },
+        {
+          name: "Foreach",
+          href: "/keywords/foreach.html"
         }
       ]
     },
@@ -107,6 +111,10 @@ export const fullNavigation: NavigationElement = {
         {
           name: "Tables",
           href: "/types/tables.html"
+        },
+        {
+          name: "Field Symbols",
+          href: "/types/field-symbol.html"
         }
       ]
     },

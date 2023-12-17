@@ -1,0 +1,41 @@
+<html>
+<head>
+  <script src="/src/js/app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,800;1,200;1,800;1,600&family=Sono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/app.css">
+  <link rel="shortcut icon" href="/src/icons/favivon.ico" type="image/x-icon">
+  <title>BBAP</title>
+</head>
+<body>
+<div class="app dark">
+  <nav class="navigation">
+  </nav>
+  <main>
+    <h1>Field Symbols</h1>
+    <p>
+      A field symbol is used to access one value in a table. It references the value, so if the value changes, the field
+      symbol will change too, and vice versa.
+    </p>
+
+    <h2>Example</h2>
+    <code class="block">
+      let exampleTable: Table&lt;int&gt;;
+      let exampleFieldSymbol = exampleTable.ToFieldSymbol();
+    </code>
+    <p>
+      The <code>ToFieldSymbol</code> method is used to create a field symbol from a table. <br>
+      The <code>ToFieldSymbol</code> method takes no parameters.
+    </p>
+    <p>
+      Additionally, field symbols are used in <a href="/keywords/foreach.html">foreach</a> loops.
+    </p>
+  </main>
+</div>
+</body>
+</html>
