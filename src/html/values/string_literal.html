@@ -24,10 +24,11 @@
       You can define a string either in double quotation marks (<code>"This is a string"</code>) or in single quotation
       marks (<code>'This is also a string'</code>).<br />
       They both behave the same.<br />
-      The only difference is, that you can use the other form inside a string literal without escaping it.
+      The differences are, that you can use the other form inside a string literal without escaping it.
+      In a declaration a string defined in single quotation marks are of type char, as long no type is specified.
       <code class="block">
         let exampleString  = "Hello 'World' string";     // Hello 'World' string
-        let exampleString2 = 'Hello "World" string';     // Hello "World" string
+        let exampleString2 = 'Hello "World" string';     // Hello "World" char array
       </code>
     </p>
 
